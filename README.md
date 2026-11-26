@@ -30,3 +30,7 @@ Cubren la agrupación de registros en bloques (límite de 125 del protocolo), la
 
 - GitHub Actions revisa todo el historial con **gitleaks** en cada PR y cada lunes, y falla si aparece una IP de red privada en el código.
 - Licencia [MIT](LICENSE).
+
+## Simulator test (no plant needed)
+
+`tests/test_simulador.py` starts a real pymodbus TCP server on loopback with a synthetic meter (invented values) and runs the full read cycle against it: block reads, FLOAT32 decoding and the report. Runs in CI; pymodbus is pinned to 3.6–3.8 for the test dependencies.
