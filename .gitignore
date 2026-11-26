@@ -1,0 +1,11 @@
+# Builds de PyInstaller y entorno local
+build/
+dist/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.exe
+# Configuración y lecturas del sitio (no se suben)
+config.ini
+lecturas/

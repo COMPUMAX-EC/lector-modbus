@@ -1,0 +1,9 @@
+; Copie este archivo como config.ini junto al ejecutable y ponga la IP de su medidor.
+; config.ini no se sube al repositorio (.gitignore).
+; 192.0.2.10 es una dirección de documentación (RFC 5737), no un equipo real.
+[ModbusReader]
+ip = 192.0.2.10
+puerto = 502
+esclavo = 23
+intervalo_seg = 3.0
+timeout = 3.0
